@@ -39,7 +39,7 @@ export default function Kanji() {
       <ul className="space-y-2 w-full max-w-2xl mx-auto">
         {data.data.map((item: any) => (
           <li key={item.slug} className="bg-gray-800 p-2 rounded text-center">
-            <span className="font-bold">{item.japanese[0].word || item.japanese[0].reading}</span> - {item.senses[0].english_definitions.join(", ")}
+            <span className="font-bold">{item.japanese[0].word || item.japanese[0].reading}</span> - {item.japanese[0].reading} - {item.senses[0].english_definitions.join(", ")}
           </li>
         ))}
       </ul>
